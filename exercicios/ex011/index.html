@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplsmente aumente e diminua o tamanho do seu navegador</p>
+    <!-- USAR A TAG Picture, quando houver várias sources, com várias fontes
+    alternativas, permite que o navegador escolha a imagem mais adequada. -->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Girasol.mp3" controls autoplay></audio>
+    <audio src="midia/Girasol.ogg" controls autoplay></audio>
+    <audio src="midia/Girasol.wav" controls autoplay></audio>
+</body>
+<h1>Inserindo vídeos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/st3BucC0e3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+</html>

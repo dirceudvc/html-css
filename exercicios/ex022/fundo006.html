@@ -9,12 +9,21 @@
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            background-size: fixed;
+            background-size: fixed; */
+
+            /* Shorthand - background
+               color > image > position > repeat > [size] > attachment */
+
+            /* Na documentação, diz que pode usar dessa forma, mas não dá certo */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat;
+            /* tem que acrescentar essa linha para funcionar. */
+            background-size: cover;
         }
 
         main{

@@ -22,18 +22,22 @@
             text-align: center;
         }
 
-        div.class{
-            background-color: darkgray;
+        tr.media {
+            background-color: darkgrey;
+            margin: 10px 10px 10px 10px;
+            /* border-left: 1px; */
         }
 
-        tr#media {
-            background-color: skyblue;
+        tr.area {
+            /* color: black; */
+            /* border-style: solid; */
         }
 
         tfoot{
             background-color: darkgrey;
-            /* text-align: right; */
-        }
+            /* border-style: solid; */
+            
+        } 
         
     </style>
 </head>
@@ -47,7 +51,7 @@
             <td>Nota2</td>
             <td>Média</td>
         </tr>
-        <tr>
+        <tr class="area">
             <td rowspan="5">Exatas</td>
         </tr>
         <tr>
@@ -79,11 +83,12 @@
 
 
 
-        <tr>
-            <td colspan="4" class="media"> Média de Exatas</td>
+        <tr class = "media">
+            <td colspan="4" > Média de Exatas</td>
             <td>0.00</td>
         </tr>
-        <tr>
+
+        <tr class="area">
             <td rowspan="3">Humanas</td>
         </tr>
 

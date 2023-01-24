@@ -8,5 +8,23 @@
 </head>
 <body>
     <h1>Teste de Formulário </h1>
+    <form action="cadastro.php" method="POST">
+        <p>
+            <label for="iusu">Usuário</label>
+            <!-- required para forçar preencher o campo. -->
+            <!-- minlength e maxlength, é o minimo e maximo de caracteres exigidos -->
+            <!-- size, é o tamanho da caixa -->
+            <!-- placeholder, vai aparecer informarção sobre o campo, por exemplo nome do usuario -->
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário">
+        </p>
+        <p>
+            <label for="isen">Senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="mínimo 8 letras">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>

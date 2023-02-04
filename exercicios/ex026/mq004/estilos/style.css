@@ -11,20 +11,20 @@
 }
 
 body, html {
-    width: 100vw;
     height: 100vh;
 }
 
 body {
     /* IMAGEM QUE VAI APARECER NO FUNDO */
     background: black url(../imagens/back-phone.jpg) no-repeat;
+    /* PARA CABER A TELA INTEIRA */
     background-size: cover;
     background-position: center center;
 }
 
 main {
     background-color: rgba(255, 255, 255, 0.842);
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     margin-top: 20px;
     border-radius: 10px;
@@ -45,7 +45,7 @@ img {
     margin: auto;
 }
 
-/* ESCONDE TODAS AS IMAGENS */
+/* ESCONDE ALGUMAS IMAGENS */
 img#phone { display: block; } 
 img#tablet { display: none; }
 img#print { display: none; }

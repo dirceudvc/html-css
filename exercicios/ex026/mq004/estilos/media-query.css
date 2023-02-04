@@ -2,6 +2,145 @@
 
 /* Todas as demais midias */
 
+/* Typical Device Breakpoinst
+   Medidas pegas no W3C, Organização do consórcio W3C
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
 @media print {
-    
+
+    /*IMPRESSÃO */
+    body {
+        background-image: url(../imagens/back-print.jpg)
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE PRINT */
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+/* A CONFIGURAÇÃO MÓOVEL, JÁ FOI FEITA NO STYLE.CSS, NO MEDIA-QUERY.CSS 
+PODE IGNORAR ESSA PARTE, NÃO VAI TER CONFIGURAÇÃO PARA DISPOSITIVOS
+MOVEIS PORQUE JA EXISTE ESSA CONFIGURAÇÃO PARA MOBYLE FIRST */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE TABLET */
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE DESKTOP */
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE TV */
+    img#phone {
+        display: none;
+    }
+
+    img#tablet {
+        display: none;
+    }
+
+    img#print {
+        display: none;
+    }
+
+    img#pc {
+        display: none;
+    }
+
+    img#tv {
+        display: block;
+    }
 }

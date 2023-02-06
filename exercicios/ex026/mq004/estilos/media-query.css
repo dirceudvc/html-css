@@ -62,25 +62,11 @@ MOVEIS PORQUE JA EXISTE ESSA CONFIGURAÇÃO PARA MOBYLE FIRST */
     }
 
     /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE TABLET */
-    img#phone {
-        display: none;
-    }
-
-    img#tablet {
-        display: block;
-    }
-
-    img#print {
-        display: none;
-    }
-
-    img#pc {
-        display: none;
-    }
-
-    img#tv {
-        display: none;
-    }
+    img#phone { display: none; }
+    img#tablet { display: block; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: none; }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -91,25 +77,11 @@ MOVEIS PORQUE JA EXISTE ESSA CONFIGURAÇÃO PARA MOBYLE FIRST */
     }
 
     /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE DESKTOP */
-    img#phone {
-        display: none;
-    }
-
-    img#tablet {
-        display: none;
-    }
-
-    img#print {
-        display: none;
-    }
-
-    img#pc {
-        display: block;
-    }
-
-    img#tv {
-        display: none;
-    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: block; }
+    img#tv { display: none; }
 }
 
 @media screen and (min-width: 1200px) {
@@ -119,28 +91,12 @@ MOVEIS PORQUE JA EXISTE ESSA CONFIGURAÇÃO PARA MOBYLE FIRST */
         background-image: url(../imagens/back-tv.jpg);
     }
 
-    main {
-        width: 700px;
-    }
+    main { width: 700px;}
 
     /* ESCONDE OUTRAS IMAGENS, MOSTRA SOMENTE TV */
-    img#phone {
-        display: none;
-    }
-
-    img#tablet {
-        display: none;
-    }
-
-    img#print {
-        display: none;
-    }
-
-    img#pc {
-        display: none;
-    }
-
-    img#tv {
-        display: block;
-    }
+    img#phone { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#pc { display: none; }
+    img#tv { display: block; }
 }

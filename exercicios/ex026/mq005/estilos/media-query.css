@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px */
+
+/* se for no mínimo 768px pega Tablet, Desktop e Grandes telas */
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        /* quando a tela for maior mostra opcao 1, opcao 2, opção 3, 4 e 5 */
+        display: block;
+    }
+
+    menu > ul > li {
+        /* mostra opções na mesma linha, um ao lado do outro */
+        display: inline-block;
+    }
+
+    main {
+        /* se a tela for grande, o conteúdo vai somente até 768 px */
+        width: 768px;
+    }
+}

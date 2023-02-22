@@ -43,12 +43,14 @@ i#burguer:hover {
 }
 
 menu {
+    /* displa: block, aparece Opção 1 opção 2, opção 3, opção 4, opção 5; */
     /* display: block; */
+    /* display: none, não aparecem essas opções; */
     display: none;
 }
 
 /* tirar as bolinhas do menu */
-menu ul {
+menu > ul {
     list-style-type: none;
 }
 

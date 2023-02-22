@@ -15,13 +15,36 @@ header {
     background-color: gray;
 }
 
-header h1 {
+header > h1 {
     padding: 10px;
     text-align: center;
 }
 
+i#burguer {
+    background-color: rgb(41, 40, 40);
+    /* cor do menu */
+    color: white;
+    /* linha do menu na linha inteira */
+    display:block;
+    /* opções do menu no centro */
+    text-align: center;
+    /* aumenta espaço das opções dentro da barra */
+    padding: 10px;
+    /* cursor vira uma mãozinha */
+    cursor: pointer;
+}
+
+/* quando passar o mouse por cima */
+i#burguer:hover {
+    /* fundo branco */
+    background-color: white;
+    /* fonte preta */
+    color: black;
+}
+
 menu {
-    display: block;
+    /* display: block; */
+    display: none;
 }
 
 /* tirar as bolinhas do menu */
